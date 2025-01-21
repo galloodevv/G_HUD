@@ -6,7 +6,7 @@ An elegant and minimalist HUD for FiveM that dynamically adapts to player needs.
 
 ## 🖼️ Preview
 <div align="center">
-    <img src="https://i.imgur.com/XcqtmBE.png" alt="Gallo HUD Preview" width="500">
+    <img src="https://cdn.discordapp.com/attachments/1239702150670454784/1331389114108481546/image.png?ex=6791703c&is=67901ebc&hm=56a6f6aa838381d859f4ff11e9fbdfbdcb2a74a48c461cfc3d3d1997cc5cbcf1&" alt="Gallo HUD Preview" width="500">
 </div>
 
 ## ✨ Features
