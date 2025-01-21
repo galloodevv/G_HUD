@@ -1,7 +1,6 @@
 local framework = nil
 local hunger, thirst = 0, 0
 
--- Detectar el framework al inicio
 Citizen.CreateThread(function()
     while framework == nil do
         if GetResourceState('es_extended') == 'started' then
@@ -15,12 +14,10 @@ Citizen.CreateThread(function()
     end
 end)
 
--- Función principal de actualización del HUD
 local function UpdateHUD()
     local ped = PlayerPedId()
     local isDead = IsEntityDead(ped)
     
-    -- Actualizar hambre y sed según el framework y estado del jugador
     if isDead then
         hunger, thirst = 0, 0
     else
