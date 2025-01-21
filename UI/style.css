@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: transparent;
+}
+
+.container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+.hud {
+    display: flex;
+    gap: 4px;
+}
+
+.hud-item {
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 3px;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hud-item i {
+    color: white;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin-top: 3px;
+}
+
+.progress-bar {
+    width: 28px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    position: relative;
+}
+
+#health-box .progress { background: rgb(255, 61, 61); }
+#armor-box .progress { background: rgb(66, 135, 245); }
+#food-box .progress { background: rgb(255, 164, 59); }
+#drink-box .progress { background: rgb(64, 186, 255); }
+#stamina-box .progress { background: rgb(255, 213, 59); }
+
+.hud-item[v-cloak] {
+    display: none;
+}
+
+.container {
+    transition: opacity 0.3s ease;
+}
+
+.container[v-cloak] {
+    opacity: 0;
+}
