@@ -14,7 +14,7 @@ Citizen.CreateThread(function()
     end
 end)
 
-local function UpdateHUD()
+function UpdateHUD()
     local ped = PlayerPedId()
     local isDead = IsEntityDead(ped)
     
